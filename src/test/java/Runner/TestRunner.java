@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features={"src/test/java/featurePackage/cityBike.feature"},
+        features=("./src/test/java/featureFiles/cityBike.feature"),
         glue =  {"stepDef"},
         plugin = { "pretty",  "junit:target/cucumber-reports/Cucumber.xml",
 						      "json:target/surefire-reports/Cucumber.json",
